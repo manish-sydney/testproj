@@ -346,6 +346,20 @@
 				},
 				{
 					"name": "Get Cases status Options",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5a81383c-26e9-4c04-99b9-dfe0de7cd547",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "55d5ec69-fb7b-4da4-8f26-ead4c0ec903a",
 					"request": {
 						"method": "GET",
@@ -356,13 +370,15 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/case/status",
+							"raw": "https://reqres.in/api/unknown",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"reqres",
+								"in"
 							],
 							"path": [
-								"case",
-								"status"
+								"api",
+								"unknown"
 							]
 						}
 					},
@@ -490,6 +506,23 @@
 			"item": [
 				{
 					"name": "Get All Categories",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ad28db9e-9b02-4a23-9e4a-5c911464d5d8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "fbbb5414-b764-48bd-9316-a56943c8ddbb",
 					"request": {
 						"method": "GET",
@@ -500,12 +533,21 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/categories",
+							"raw": "https://reqres.in/api/users?page=2",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"reqres",
+								"in"
 							],
 							"path": [
-								"categories"
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
 							]
 						}
 					},
