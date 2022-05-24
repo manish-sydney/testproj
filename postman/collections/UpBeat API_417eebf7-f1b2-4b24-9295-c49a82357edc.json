@@ -7,65 +7,20 @@
 	},
 	"item": [
 		{
-			"name": "account",
+			"name": "case",
 			"item": [
 				{
-					"name": "Get Account Members",
-					"id": "b16e7340-89e8-4e2e-930a-48c2ad4bebc9",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/account/contacts/memberid={{memberid}}?pageCount=40695294&pageNumber=40695294&sortCol=culpa Duis dolore&sortOrder=culpa Duis dolore",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"account",
-								"contacts",
-								"memberid={{memberid}}"
-							],
-							"query": [
-								{
-									"key": "pageCount",
-									"value": "40695294",
-									"description": "Maximum number of records in result set"
-								},
-								{
-									"key": "pageNumber",
-									"value": "40695294",
-									"description": "Page number to return in the paging sequence"
-								},
-								{
-									"key": "sortCol",
-									"value": "culpa Duis dolore",
-									"description": "What attribute to sort the result by"
-								},
-								{
-									"key": "sortOrder",
-									"value": "culpa Duis dolore",
-									"description": "Sort order. Possible values ascending, asc, a, descending, desc, d"
-								}
-							]
-						},
-						"description": "Get all Member Detail records belonging to an Account"
-					},
-					"response": [
+					"name": "account",
+					"item": [
 						{
-							"id": "5f6287b8-227a-45cb-88a8-7cd3b7b85197",
-							"name": "Returns an array of MemberAccounts",
-							"originalRequest": {
+							"name": "Get Account Members",
+							"id": "7fc52b2d-8f06-4c62-a668-0689dd7687fc",
+							"request": {
 								"method": "GET",
 								"header": [
 									{
-										"description": "Request Authorization header - base64",
-										"key": "Authorization",
-										"value": "culpa Duis dolore"
+										"key": "Accept",
+										"value": "application/json"
 									}
 								],
 								"url": {
@@ -81,71 +36,95 @@
 									"query": [
 										{
 											"key": "pageCount",
-											"value": "40695294"
+											"value": "40695294",
+											"description": "Maximum number of records in result set"
 										},
 										{
 											"key": "pageNumber",
-											"value": "40695294"
+											"value": "40695294",
+											"description": "Page number to return in the paging sequence"
 										},
 										{
 											"key": "sortCol",
-											"value": "culpa Duis dolore"
+											"value": "culpa Duis dolore",
+											"description": "What attribute to sort the result by"
 										},
 										{
 											"key": "sortOrder",
-											"value": "culpa Duis dolore"
+											"value": "culpa Duis dolore",
+											"description": "Sort order. Possible values ascending, asc, a, descending, desc, d"
 										}
 									]
-								}
+								},
+								"description": "Get all Member Detail records belonging to an Account"
 							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
+							"response": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"id": "71301d7c-9099-4a55-b740-cbf135ad4314",
+									"name": "Returns an array of MemberAccounts",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Request Authorization header - base64",
+												"key": "Authorization",
+												"value": "culpa Duis dolore"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/account/contacts/memberid={{memberid}}?pageCount=40695294&pageNumber=40695294&sortCol=culpa Duis dolore&sortOrder=culpa Duis dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"account",
+												"contacts",
+												"memberid={{memberid}}"
+											],
+											"query": [
+												{
+													"key": "pageCount",
+													"value": "40695294"
+												},
+												{
+													"key": "pageNumber",
+													"value": "40695294"
+												},
+												{
+													"key": "sortCol",
+													"value": "culpa Duis dolore"
+												},
+												{
+													"key": "sortOrder",
+													"value": "culpa Duis dolore"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"ErrorMessage\": \"quis cupidatat enim Excepteur\",\n  \"Success\": false,\n  \"ResponseData\": {\n    \"MoreRecords\": false,\n    \"Results\": [\n      {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    ],\n    \"TotalRecordCount\": 14885281\n  }\n}"
 								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"ErrorMessage\": \"quis cupidatat enim Excepteur\",\n  \"Success\": false,\n  \"ResponseData\": {\n    \"MoreRecords\": false,\n    \"Results\": [\n      {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    ],\n    \"TotalRecordCount\": 14885281\n  }\n}"
-						}
-					]
-				},
-				{
-					"name": "Get Account Member by id",
-					"id": "615b1bac-4c70-496a-9b1e-7d424f05d7f2",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/account/id={{id}}",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"account",
-								"id={{id}}"
 							]
-						}
-					},
-					"response": [
+						},
 						{
-							"id": "70c1020c-a84e-4263-8d8a-2ae6841720ce",
-							"name": "Returns a AccountMember",
-							"originalRequest": {
+							"name": "Get Account Member by id",
+							"id": "ea9ae4f7-f49c-4d9c-96cf-33a1bbe3230b",
+							"request": {
 								"method": "GET",
 								"header": [
 									{
-										"description": "Request Authorization header - base64",
-										"key": "Authorization",
-										"value": "culpa Duis dolore"
+										"key": "Accept",
+										"value": "application/json"
 									}
 								],
 								"url": {
@@ -159,71 +138,61 @@
 									]
 								}
 							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
+							"response": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"id": "edb1ad35-5395-4e90-bbb6-79ea8fb880af",
+									"name": "Returns a AccountMember",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Request Authorization header - base64",
+												"key": "Authorization",
+												"value": "culpa Duis dolore"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/account/id={{id}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"account",
+												"id={{id}}"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"ErrorMessage\": \"elit dolore ut dolor\",\n  \"Success\": true,\n  \"ResponseData\": {\n    \"account\": \"incididunt id\",\n    \"billingAddressCity\": \"cupidatat irure laborum Excepteur\",\n    \"billingAddressCountry\": \"Lorem officia\",\n    \"billingAddressLine1\": \"in laboris culpa\",\n    \"billingAddressLine2\": \"occaecat incididunt in tempor\",\n    \"billingAddressPostcode\": \"amet\",\n    \"billingAddressSameAsAbove\": \"consequat Excepteur\",\n    \"billingAddressState\": \"aliqua magna Excepteur irure et\",\n    \"dateModified\": \"quis anim qui ut\",\n    \"membershipExpiry\": \"irure magna aliqua\",\n    \"membershipLevel\": \"commodo sunt\",\n    \"membershipNumber\": \"amet\",\n    \"membershipType\": \"mollit labore ullamco\",\n    \"memberStatus\": \"irure sit dolor Lorem\",\n    \"phone\": \"reprehenderit\",\n    \"postalAddressCity\": \"deserunt officia mollit\",\n    \"postalAddressCountry\": \"officia laborum sint nulla\",\n    \"postalAddressLine1\": \"minim sit\",\n    \"postalAddressLine2\": \"pariatur fugiat id\",\n    \"postalAddressName\": \"nostrud nulla sed\",\n    \"postalAddressPostcode\": \"mollit commodo sit ut\",\n    \"postalAddressSameAsAbove\": \"dolore\",\n    \"postalAddressState\": \"ex aliquip\",\n    \"priceGroup\": \"eu id elit esse\",\n    \"signupDate\": \"sed et\",\n    \"streetAddressCity\": \"consequat magna sed commodo\",\n    \"streetAddressCountry\": \"labore\",\n    \"streetAddressLine1\": \"amet \",\n    \"streetAddressLine2\": \"non\",\n    \"streetAddressName\": \"amet\",\n    \"streetAddressPostcode\": \"dolore est incididunt irure\",\n    \"streetAddressState\": \"commodo fugiat sint\",\n    \"uniqueid\": \"qui occaecat volup\",\n    \"website\": \"nulla et\"\n  }\n}"
 								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"ErrorMessage\": \"elit dolore ut dolor\",\n  \"Success\": true,\n  \"ResponseData\": {\n    \"account\": \"incididunt id\",\n    \"billingAddressCity\": \"cupidatat irure laborum Excepteur\",\n    \"billingAddressCountry\": \"Lorem officia\",\n    \"billingAddressLine1\": \"in laboris culpa\",\n    \"billingAddressLine2\": \"occaecat incididunt in tempor\",\n    \"billingAddressPostcode\": \"amet\",\n    \"billingAddressSameAsAbove\": \"consequat Excepteur\",\n    \"billingAddressState\": \"aliqua magna Excepteur irure et\",\n    \"dateModified\": \"quis anim qui ut\",\n    \"membershipExpiry\": \"irure magna aliqua\",\n    \"membershipLevel\": \"commodo sunt\",\n    \"membershipNumber\": \"amet\",\n    \"membershipType\": \"mollit labore ullamco\",\n    \"memberStatus\": \"irure sit dolor Lorem\",\n    \"phone\": \"reprehenderit\",\n    \"postalAddressCity\": \"deserunt officia mollit\",\n    \"postalAddressCountry\": \"officia laborum sint nulla\",\n    \"postalAddressLine1\": \"minim sit\",\n    \"postalAddressLine2\": \"pariatur fugiat id\",\n    \"postalAddressName\": \"nostrud nulla sed\",\n    \"postalAddressPostcode\": \"mollit commodo sit ut\",\n    \"postalAddressSameAsAbove\": \"dolore\",\n    \"postalAddressState\": \"ex aliquip\",\n    \"priceGroup\": \"eu id elit esse\",\n    \"signupDate\": \"sed et\",\n    \"streetAddressCity\": \"consequat magna sed commodo\",\n    \"streetAddressCountry\": \"labore\",\n    \"streetAddressLine1\": \"amet \",\n    \"streetAddressLine2\": \"non\",\n    \"streetAddressName\": \"amet\",\n    \"streetAddressPostcode\": \"dolore est incididunt irure\",\n    \"streetAddressState\": \"commodo fugiat sint\",\n    \"uniqueid\": \"qui occaecat volup\",\n    \"website\": \"nulla et\"\n  }\n}"
-						}
-					]
-				},
-				{
-					"name": "Update Account",
-					"id": "a0416410-856d-4f47-a616-fa9d0d659ed2",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"account\": \"sit consectetur est ad in\",\n  \"billingAddressCity\": \"id\",\n  \"billingAddressCountry\": \"Ut commodo incididunt ipsum\",\n  \"billingAddressLine1\": \"minim proide\",\n  \"billingAddressLine2\": \"laboris cillum\",\n  \"billingAddressPostcode\": \"et Duis a\",\n  \"billingAddressSameAsAbove\": \"et ut consectetur\",\n  \"billingAddressState\": \"proident pariatur deserunt temp\",\n  \"dateModified\": \"in officia commodo pariatur\",\n  \"membershipExpiry\": \"adipisicing ad nulla irure\",\n  \"membershipLevel\": \"veniam id ut \",\n  \"membershipNumber\": \"dolor\",\n  \"membershipType\": \"ut in\",\n  \"memberStatus\": \"commodo ex\",\n  \"phone\": \"in Ut exercitation cu\",\n  \"postalAddressCity\": \"laboris nostrud minim magna\",\n  \"postalAddressCountry\": \"aliquip Excepteur dolor qui est\",\n  \"postalAddressLine1\": \"consequat laborum\",\n  \"postalAddressLine2\": \"nisi aliqua qui\",\n  \"postalAddressName\": \"et aliqua ipsum\",\n  \"postalAddressPostcode\": \"amet fugiat Ut\",\n  \"postalAddressSameAsAbove\": \"laboris sit adipisi\",\n  \"postalAddressState\": \"proident tempor nisi sunt esse\",\n  \"priceGroup\": \"consequat laboris\",\n  \"signupDate\": \"Duis irure\",\n  \"streetAddressCity\": \"minim\",\n  \"streetAddressCountry\": \"d\",\n  \"streetAddressLine1\": \"do nulla magna dolore minim\",\n  \"streetAddressLine2\": \"eiusmod voluptate nostrud amet\",\n  \"streetAddressName\": \"cupidatat incididunt\",\n  \"streetAddressPostcode\": \"sit pariatur nulla\",\n  \"streetAddressState\": \"laborum exercitation sunt\",\n  \"uniqueid\": \"elit nisi sint\",\n  \"website\": \"anim ea in deserunt\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/account/update",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"account",
-								"update"
 							]
 						},
-						"description": "Updates an Account"
-					},
-					"response": [
 						{
-							"id": "602fb7bc-19b0-4537-b61d-b1a430bcd63b",
-							"name": "Successfully updated a AccountMember",
-							"originalRequest": {
+							"name": "Update Account",
+							"id": "4f906596-c650-4f22-97db-aee87894aca0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
 								"method": "POST",
 								"header": [
 									{
-										"description": "Request Authorization header - base64",
-										"key": "Authorization",
-										"value": "culpa Duis dolore"
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
 									}
 								],
 								"body": {
@@ -244,29 +213,60 @@
 										"account",
 										"update"
 									]
-								}
+								},
+								"description": "Updates an Account"
 							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
+							"response": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"id": "b33d97cd-8e10-4c2a-bd39-9a3b205c6c44",
+									"name": "Successfully updated a AccountMember",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Request Authorization header - base64",
+												"key": "Authorization",
+												"value": "culpa Duis dolore"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"account\": \"sit consectetur est ad in\",\n  \"billingAddressCity\": \"id\",\n  \"billingAddressCountry\": \"Ut commodo incididunt ipsum\",\n  \"billingAddressLine1\": \"minim proide\",\n  \"billingAddressLine2\": \"laboris cillum\",\n  \"billingAddressPostcode\": \"et Duis a\",\n  \"billingAddressSameAsAbove\": \"et ut consectetur\",\n  \"billingAddressState\": \"proident pariatur deserunt temp\",\n  \"dateModified\": \"in officia commodo pariatur\",\n  \"membershipExpiry\": \"adipisicing ad nulla irure\",\n  \"membershipLevel\": \"veniam id ut \",\n  \"membershipNumber\": \"dolor\",\n  \"membershipType\": \"ut in\",\n  \"memberStatus\": \"commodo ex\",\n  \"phone\": \"in Ut exercitation cu\",\n  \"postalAddressCity\": \"laboris nostrud minim magna\",\n  \"postalAddressCountry\": \"aliquip Excepteur dolor qui est\",\n  \"postalAddressLine1\": \"consequat laborum\",\n  \"postalAddressLine2\": \"nisi aliqua qui\",\n  \"postalAddressName\": \"et aliqua ipsum\",\n  \"postalAddressPostcode\": \"amet fugiat Ut\",\n  \"postalAddressSameAsAbove\": \"laboris sit adipisi\",\n  \"postalAddressState\": \"proident tempor nisi sunt esse\",\n  \"priceGroup\": \"consequat laboris\",\n  \"signupDate\": \"Duis irure\",\n  \"streetAddressCity\": \"minim\",\n  \"streetAddressCountry\": \"d\",\n  \"streetAddressLine1\": \"do nulla magna dolore minim\",\n  \"streetAddressLine2\": \"eiusmod voluptate nostrud amet\",\n  \"streetAddressName\": \"cupidatat incididunt\",\n  \"streetAddressPostcode\": \"sit pariatur nulla\",\n  \"streetAddressState\": \"laborum exercitation sunt\",\n  \"uniqueid\": \"elit nisi sint\",\n  \"website\": \"anim ea in deserunt\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/account/update",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"account",
+												"update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"ErrorMessage\": \"elit dolore ut dolor\",\n  \"Success\": true,\n  \"ResponseData\": {\n    \"account\": \"incididunt id\",\n    \"billingAddressCity\": \"cupidatat irure laborum Excepteur\",\n    \"billingAddressCountry\": \"Lorem officia\",\n    \"billingAddressLine1\": \"in laboris culpa\",\n    \"billingAddressLine2\": \"occaecat incididunt in tempor\",\n    \"billingAddressPostcode\": \"amet\",\n    \"billingAddressSameAsAbove\": \"consequat Excepteur\",\n    \"billingAddressState\": \"aliqua magna Excepteur irure et\",\n    \"dateModified\": \"quis anim qui ut\",\n    \"membershipExpiry\": \"irure magna aliqua\",\n    \"membershipLevel\": \"commodo sunt\",\n    \"membershipNumber\": \"amet\",\n    \"membershipType\": \"mollit labore ullamco\",\n    \"memberStatus\": \"irure sit dolor Lorem\",\n    \"phone\": \"reprehenderit\",\n    \"postalAddressCity\": \"deserunt officia mollit\",\n    \"postalAddressCountry\": \"officia laborum sint nulla\",\n    \"postalAddressLine1\": \"minim sit\",\n    \"postalAddressLine2\": \"pariatur fugiat id\",\n    \"postalAddressName\": \"nostrud nulla sed\",\n    \"postalAddressPostcode\": \"mollit commodo sit ut\",\n    \"postalAddressSameAsAbove\": \"dolore\",\n    \"postalAddressState\": \"ex aliquip\",\n    \"priceGroup\": \"eu id elit esse\",\n    \"signupDate\": \"sed et\",\n    \"streetAddressCity\": \"consequat magna sed commodo\",\n    \"streetAddressCountry\": \"labore\",\n    \"streetAddressLine1\": \"amet \",\n    \"streetAddressLine2\": \"non\",\n    \"streetAddressName\": \"amet\",\n    \"streetAddressPostcode\": \"dolore est incididunt irure\",\n    \"streetAddressState\": \"commodo fugiat sint\",\n    \"uniqueid\": \"qui occaecat volup\",\n    \"website\": \"nulla et\"\n  }\n}"
 								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n  \"ErrorMessage\": \"elit dolore ut dolor\",\n  \"Success\": true,\n  \"ResponseData\": {\n    \"account\": \"incididunt id\",\n    \"billingAddressCity\": \"cupidatat irure laborum Excepteur\",\n    \"billingAddressCountry\": \"Lorem officia\",\n    \"billingAddressLine1\": \"in laboris culpa\",\n    \"billingAddressLine2\": \"occaecat incididunt in tempor\",\n    \"billingAddressPostcode\": \"amet\",\n    \"billingAddressSameAsAbove\": \"consequat Excepteur\",\n    \"billingAddressState\": \"aliqua magna Excepteur irure et\",\n    \"dateModified\": \"quis anim qui ut\",\n    \"membershipExpiry\": \"irure magna aliqua\",\n    \"membershipLevel\": \"commodo sunt\",\n    \"membershipNumber\": \"amet\",\n    \"membershipType\": \"mollit labore ullamco\",\n    \"memberStatus\": \"irure sit dolor Lorem\",\n    \"phone\": \"reprehenderit\",\n    \"postalAddressCity\": \"deserunt officia mollit\",\n    \"postalAddressCountry\": \"officia laborum sint nulla\",\n    \"postalAddressLine1\": \"minim sit\",\n    \"postalAddressLine2\": \"pariatur fugiat id\",\n    \"postalAddressName\": \"nostrud nulla sed\",\n    \"postalAddressPostcode\": \"mollit commodo sit ut\",\n    \"postalAddressSameAsAbove\": \"dolore\",\n    \"postalAddressState\": \"ex aliquip\",\n    \"priceGroup\": \"eu id elit esse\",\n    \"signupDate\": \"sed et\",\n    \"streetAddressCity\": \"consequat magna sed commodo\",\n    \"streetAddressCountry\": \"labore\",\n    \"streetAddressLine1\": \"amet \",\n    \"streetAddressLine2\": \"non\",\n    \"streetAddressName\": \"amet\",\n    \"streetAddressPostcode\": \"dolore est incididunt irure\",\n    \"streetAddressState\": \"commodo fugiat sint\",\n    \"uniqueid\": \"qui occaecat volup\",\n    \"website\": \"nulla et\"\n  }\n}"
+							]
 						}
-					]
-				}
-			],
-			"id": "4787e6b6-620b-4cba-9666-11a90f0e1405"
-		},
-		{
-			"name": "case",
-			"item": [
+					],
+					"id": "ce47a981-ee83-44b7-be46-b1be6ae304ba"
+				},
 				{
 					"name": "Create a  Case",
 					"id": "2a57f40c-c5f3-41c0-94d9-96ca3583f4c8",
